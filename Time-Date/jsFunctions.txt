@@ -1,0 +1,6 @@
+JSON.stringify()
+JSON.parse()
+localStorage.getItem('itemsJson')
+add = document.getElementById("add");
+add.addEventListener("click", getAndUpdate);
+if (confirm("Do you areally want to clear?"))

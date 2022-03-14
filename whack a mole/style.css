@@ -1,0 +1,17 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 606px;
+	width: 606px;
+}
+.square {
+	height: 200px;
+	width: 200px;
+	border: solid black 1px;
+}
+/* mole is a class that we will add when we have */
+/* have to show mole at a square */
+.mole {
+	background-image: url("mole.jpg");
+	background-size: cover;
+}

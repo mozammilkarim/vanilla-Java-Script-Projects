@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="passContainer">
+        <div class="passheader">
+            <span id="password">kpi989#$5</span>
+            <button id="copyButton">copy</button>
+        </div>
+        <div class="formBody">
+            <div class="formController">
+                <label for="length">length</label>
+                <input type="number" id="length" min="2" max="30" >
+            </div>
+            <div class="formController">
+                <label for="Upper case">Upper case</label>
+                <input type="checkbox" id="upperCase" >
+            </div>
+            <div class="formController">
+                <label for="Lower case">Lower case</label>
+                <input type="checkbox" id="lowerCase" >
+            </div>
+            <div class="formController">
+                <label for="Numbers">Numbers</label>
+                <input type="checkbox" id="numbers" >
+            </div>
+            <div class="formController">
+                <label for="Symbols">Symbols</label>
+                <input type="checkbox" id="symbols" >
+            </div>
+            <button id="generator">Generate Pass!</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

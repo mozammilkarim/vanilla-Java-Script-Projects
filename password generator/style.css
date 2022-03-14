@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background-color: rgb(170, 182, 4); */
+    color: rgb(97, 91, 91);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+.passContainer{
+    background-color: rgb(12, 192, 216);
+    /* to give some shadow effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* to make it a little broad */
+    min-width: 300px;
+}
+.passHeader{
+    padding: 1rem;
+}
+#password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(14, 139, 170);
+    position: relative;
+    font-size: 1rem;
+    padding: 1rem;
+}
+#copyButton{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: rgb(102, 4, 201);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+#copyButton:hover{
+    opacity: 1;
+    transform: translate(0,0%);
+}
+.formController {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+.generate {
+    background-color: #ecb602;
+    border: none;
+    color: rebeccapurple;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.formBody {
+    padding: 0 1rem 1rem;
+}

@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.appSection{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+}
+.timerSection,.soundSection,.playSection{
+    height: 80%;
+    /* flex=1 means all items inside a flex 
+    container will share equal portion */
+    flex: 1;
+}
+.soundSection,.timerSection,.playSection{
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+}
+.timerSection{
+    /* initially background colors were used to
+    understand layout of the app */
+    /* background: lightcoral; */
+    font-size: 50px;
+}
+/* .soundSection{
+    background: lightgray;
+} */
+.playSection{
+    /* background: lightblue; */
+    position: relative;
+}
+.playSection svg{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    /* to avoid clicking svg as we want to
+    click image behind svg */
+    pointer-events: none;
+}
+.timerSection button,.soundSection button{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 10%;
+    width: 30%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    transition: all 0.5 ease;
+}
+
+.timerSection button:hover{
+    color: black;
+    background-color: white;
+}
+.soundSection button{
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* padding: 30px; */
+}
+.soundSection button:nth-child(1){
+    background-color: brown;
+}
+.soundSection button:nth-child(2){
+    background-color: grey;
+}
+.soundSection button img{
+    height: 90%;
+}
+.timeDisplay{
+    position: absolute;
+    bottom: 10%;
+    font-size: 50px;
+    color: white;
+}
+.videoSection{
+    /* display: none; */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+/* .videoSection video{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+} */
